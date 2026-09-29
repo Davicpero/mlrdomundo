@@ -1,0 +1,92 @@
+body {
+  background: #0d1b2a;
+  color: #222;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 40px 15px;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.lista-jogadores {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jogador-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 15px;
+
+  background: white;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.nome {
+  font-weight: bold;
+}
+
+.votos {
+  margin-left: auto;
+  color: #666;
+}
+
+.jogador-item button {
+  background: #3478db;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 8px 15px;
+
+  cursor: pointer;
+}
+
+.jogador-item button:hover {
+  background: #2864b8;
+}
+
+.lider {
+  border: 2px solid #e5b900;
+  background: #fffbea;
+}
+
+.lider .votos {
+  color: #b18b00;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .jogador-item {
+    padding: 12px;
+  }
+
+  .jogador-item button {
+    padding: 7px 10px;
+  }
+}
